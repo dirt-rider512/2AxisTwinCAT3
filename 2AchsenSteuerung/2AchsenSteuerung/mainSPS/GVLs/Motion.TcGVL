@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <GVL Name="Motion" Id="{26184efa-9b25-4c11-892c-01531da9be28}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	Axis2_Ref: AXIS_REF;
+	Axis1_Ref: AXIS_REF;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

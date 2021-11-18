@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
+  <GVL Name="Inputs" Id="{7ca7042e-73dd-4910-b1bc-ac1f32cc1c4a}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	Kamera: BOOL;
+	Druckluft: BOOL;
+	Sicherung: BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
