@@ -2,15 +2,15 @@
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.4">
   <POU Name="MotionEnable" Id="{168e200a-6624-4037-8d35-a43cb7583681}" SpecialFunc="None">
     <Declaration><![CDATA[FUNCTION_BLOCK MotionEnable
-VAR_INPUT
-END_VAR
 VAR_OUTPUT
+	MotionEnable: BOOL;
 END_VAR
-VAR
+VAR_INPUT
+	Enable: BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[MotionEnable := Enable AND Inputs.Druckluft AND Inputs.Kamera AND Inputs.Sicherung;]]></ST>
     </Implementation>
     <LineIds Name="MotionEnable">
       <LineId Id="9" Count="0" />
